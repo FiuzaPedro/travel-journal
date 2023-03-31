@@ -1,0 +1,67 @@
+@media only screen and (max-width:1000px) {
+    header {
+        font-size: 1.5em;
+    }
+
+    .itemsContainer {
+        width: 100%;
+        /* padding: 2%; */
+        margin: 0 auto;
+    }
+
+
+    .itemsContainer img {
+        width: 150px;
+        height: 150px;
+        border-radius: 5px;
+    }
+
+    .infoContainer {
+        /* margin-left: 10%; */
+        width: 100%;
+        position: relative;
+    }
+
+    .divTravelItem {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        height: auto;
+        border-bottom: 4px groove white;
+        border-bottom-left-radius: 100%;
+        padding: 1%;
+
+    }
+
+    .divTravelItem:not(:first-child) {
+        margin-top: 5%;
+    }
+
+    .spanLocation {
+        font-size: 1.2em;
+        top: -20%;
+        right: 0;
+
+    }
+
+    .aLinks {
+        padding: 10px;
+        border-radius: 999em;
+        background-color: white;
+        color: #2779a7;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: 0.4s ease-in-out all;
+    }
+
+    .upArrow {
+        opacity: 0;
+        position: fixed;
+        left: 70%;
+        top: 80%;
+        margin-top: 20px;
+        width: 50px;
+    }
+
+}

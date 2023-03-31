@@ -1,0 +1,156 @@
+body {
+    box-sizing: border-box;
+    background-color: #2779a7;
+    color: white;
+    text-align: center;
+}
+
+header {
+    padding: 3%;
+    font-size: 2em;
+    background-color: #d14836;
+    background-color: rgba(209, 72, 54, 0.9)
+}
+
+.itemsContainer {
+    width: 100%;
+    /* padding: 2%; */
+    margin: 0 auto;
+}
+
+.App {
+    padding-bottom: 200px;
+}
+
+.itemsContainer img {
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+}
+
+.infoContainer {
+    /* margin-left: 10%; */
+    width: 50%;
+}
+
+.divTravelItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 500px;
+    border-bottom: 4px groove white;
+    border-bottom-left-radius: 100%;
+    padding: 1%;
+}
+
+.divTravelItem:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.5);
+    animation-name: evensAnim;
+    animation-duration: 2s;
+}
+
+.divTravelItem:nth-child(odd) {
+    background-color: rgba(255, 255, 255, 0.5);
+    animation-name: oddsAnim;
+    animation-duration: 2s;
+}
+
+@keyframes evensAnim {
+    0% {
+        border-bottom-left-radius: 0px;
+        transform: translateX(-1000px);
+    }
+
+    70% {
+        transform: translateX(0);
+    }
+
+    100% {
+        border-bottom-left-radius: 100%;
+        transform: translateX(0);
+    }
+}
+
+@keyframes oddsAnim {
+    0% {
+        border-bottom-left-radius: 0px;
+        transform: translateX(3000px);
+    }
+
+    70% {
+        transform: translateX(0);
+    }
+
+    100% {
+        border-bottom-left-radius: 100%;
+        transform: translateX(0);
+    }
+}
+
+.spanLocation {
+    position: absolute;
+    /*absolute to counter flex predefinitions*/
+    left: 35%;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: wheat;
+    font-size: 1.5em;
+    text-shadow:
+        1px 1px 5px wheat,
+        2px 1px 10px #2779a7,
+        3px 1px 15px red;
+    /*#D14836*/
+    transform: skew(-25deg);
+}
+
+.aLinks {
+    padding: 10px;
+    border-radius: 999em;
+    background-color: white;
+    color: #2779a7;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.4s ease-in-out all;
+}
+
+.aLinks:hover {
+    background-color: #2779a7;
+    color: white;
+    box-shadow: 0px 0px 10px white;
+}
+
+.upArrow {
+    position: absolute;
+    left: 45%;
+    width: 5%;
+    font-size: 2em;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 4%;
+    border-radius: 50%;
+    transition: 0.4s linear all;
+    animation-name: animArrow;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.upArrow:hover {
+    background-color: white;
+    color: #2779a7;
+    cursor: pointer;
+}
+
+@keyframes animArrow {
+    0% {
+        transform: translateY(-10px);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}

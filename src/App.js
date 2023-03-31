@@ -1,23 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
+//import logo from './logo.svg'
+// import './App.css';
+import './css/style.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faAngleUp } from '@fortawesome/free-solid-svg-icons'
+import data from './data/data.js';
+import Navbar from './components/Navbar';
+import TravelItem from './components/TravelItem';
+import './css/mediaquery.css';
+
+function clickArrow() {
+  window.scroll({
+    top: 0,
+    behavior: "smooth",
+  });
+}
+
+window.addEventListener('scroll', function () {
+  let winScrollPosition = window.scrollY;
+  let upArrow = document.getElementById('upArrow');
+  if (winScrollPosition > 600) {
+    upArrow.style.opacity = 1;
+  } else {
+    upArrow.style.opacity = 0;
+  }
+})
 
 function App() {
+
+  const dataImported = data.map((item) => {
+    return (
+      <TravelItem
+        key={item.title}
+        {...item}
+      />
+    )
+  })
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <div className="itemsContainer">{dataImported}</div>
+      <span id='upArrow' className='upArrow' onClick={clickArrow}><FontAwesomeIcon icon={faAngleUp} /></span>
     </div>
   );
 }
