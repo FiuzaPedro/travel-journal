@@ -1,4 +1,4 @@
-export default [
+const data = [
     {
         title: "Stonehenge",
         location: "England",
@@ -27,7 +27,7 @@ export default [
         imageUrl: "https://ml0i9otuup1b.i.optimole.com/AmM8BM4-5NyDhkmh/w:665/h:374/q:mauto/f:avif/https://www.aloha-hawaii.com/wp-content/uploads/2010/07/sunset-beach.jpg"
     }
 ]
-
+export default data;
 // ,
 //     {
 //         title: "",
