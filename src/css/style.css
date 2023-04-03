@@ -26,6 +26,11 @@ header {
     width: 300px;
     height: 300px;
     border-radius: 5px;
+
+}
+
+.imgLarge {
+    transition: 0.3s ease-in-out all;
 }
 
 .infoContainer {
@@ -34,10 +39,11 @@ header {
 }
 
 .divTravelItem {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height: 500px;
+    height: 600px;
     border-bottom: 4px groove white;
     border-bottom-left-radius: 100%;
     padding: 1%;
@@ -153,4 +159,24 @@ header {
     100% {
         transform: translateY(0px);
     }
+}
+
+
+/* thumbnail styles */
+.thumbnailsContainer {
+    display: inline-flex;
+}
+
+.imgThumb {
+    border: 1px solid white;
+    margin: 10px 20px !important;
+    width: 100px !important;
+    height: 100px !important;
+    transition: 0.4s ease-in-out all;
+    cursor: pointer;
+}
+
+.imgThumb:hover {
+    box-shadow: 10px 0px 10px white;
+    transform: translate(-5px);
 }
