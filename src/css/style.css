@@ -1,13 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@900&display=swap');
+
 body {
     box-sizing: border-box;
     background-color: #2779a7;
     color: white;
     text-align: center;
+    font-family: 'Cinzel Decorative', cursive;
+
 }
 
 header {
     padding: 3%;
-    font-size: 2em;
+    font-size: 3em;
     background-color: #d14836;
     background-color: rgba(209, 72, 54, 0.9)
 }
