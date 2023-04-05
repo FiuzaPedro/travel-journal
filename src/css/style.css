@@ -186,3 +186,19 @@ header {
     box-shadow: 10px 0px 10px white;
     transform: translate(-5px);
 }
+
+.iconEarth {
+    animation-name: animEarth;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    transition: 0.5s ease-in-out all;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes animEarth {
+    100% {
+        transform: rotate3d(0, 1, 0.5, 360deg);
+    }
+
+
+}

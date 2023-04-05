@@ -1,11 +1,12 @@
 //import logo from './logo.svg'
 // import './App.css';
-import './css/style.css';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleUp } from '@fortawesome/free-solid-svg-icons'
 import data from './data/data.js';
 import Navbar from './components/Navbar';
 import TravelItem from './components/TravelItem';
+import './css/style.css';
 import './css/mediaquery.css';
 
 function clickArrow() {
