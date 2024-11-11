@@ -24,7 +24,7 @@ const data = [
         startDate: "1 Aug, 1995",
         endDate: "15 Aug, 1995",
         description: "Sunset Beach Oahu is another Best of Oahu highlight and a beautiful surfing mecca not to be missed after making your rounds at Waimea Bay and the Banzai Pipeline!  It’s a great Oahu Beach to watch big-wave surfers in action during the wintertime. (source: best-of-oahu.com)",
-        imageUrl: "https://ml0i9otuup1b.i.optimole.com/AmM8BM4-5NyDhkmh/w:665/h:374/q:mauto/f:avif/https://www.aloha-hawaii.com/wp-content/uploads/2010/07/sunset-beach.jpg"
+        imageUrl: "https://davidbalyeat.com/wp-content/uploads/sunset-beach-oahu-hawaii-surfer-high-definition-hd-professional-landscape-photography.jpg"
     }
 ]
 export default data;

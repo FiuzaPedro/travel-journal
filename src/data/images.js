@@ -25,7 +25,7 @@ const images = [
     },
     {
         title: "Lagoa das 7 Cidades",
-        imageSrc: "https://i0.wp.com/www.futurismo.pt/blog/wp-content/uploads/2022/12/Alexandre-Balas-Sete-Cidades1.jpg?resize=819%2C1024&ssl=1"
+        imageSrc: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGFhbW6hxGQWTMfG7jW3H62fqNO4g-kOYbJQ&s"
     },
     {
         title: "Lagoa das 7 Cidades",
@@ -33,7 +33,7 @@ const images = [
     },
     {
         title: "Sunset Beach",
-        imageSrc: "https://ml0i9otuup1b.i.optimole.com/AmM8BM4-5NyDhkmh/w:665/h:374/q:mauto/f:avif/https://www.aloha-hawaii.com/wp-content/uploads/2010/07/sunset-beach.jpg"
+        imageSrc: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2RICxai0wrnyJ1DbE1RHVt6w-DYf53vwmYQ&s"
     },
     {
         title: "Sunset Beach",
